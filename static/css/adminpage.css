@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 7em;
+    height: 5em;
+}
+.navtext .tel,
+.title,
+.motto,
+#hero .slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navtext .title {
+    font-family: "Inter-ExtraBold", "Inter", sans-serif;
+    text-transform: uppercase;
+    color: #1074e0;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 800;
+}
+.container{
+    display: inline-block;
+  cursor: pointer;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+ }
+.sidebar{
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(5, 154, 75);
+}
+.sidebar header{
+  font-size: 22px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 70px;
+  background:rgb(78, 11, 193);
+  user-select: none ;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
