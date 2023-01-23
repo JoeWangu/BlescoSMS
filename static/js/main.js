@@ -3,7 +3,7 @@ showSlides(slideIndex);
 
 var intervalId = setInterval(function () {
   plusSlides(1);
-}, 10000); //3000
+}, 3000);
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
@@ -41,5 +41,5 @@ function stopSlideshow() {
 function startSlideshow() {
   intervalId = setInterval(function () {
     plusSlides(1);
-  }, 30000000);//3000
+  }, 3000);
 }

@@ -14,8 +14,8 @@
 }
 
 .logo img {
-    width: 10em;
-    height: 8em;
+    width: 10rem;
+    height: 8rem;
 }
 
 /* navigation bar */
@@ -32,8 +32,8 @@
     font-family: "Inter-ExtraBold", "Inter", sans-serif;
     text-transform: uppercase;
     color: #1074E0;
-    font-size: 2em;
-    line-height: 1.2em;
+    font-size: 2rem;
+    line-height: 1.5em;
     font-weight: 800;
 }
 
@@ -41,13 +41,14 @@
     font-family: 'Alex Brush', cursive;
     text-transform: capitalize;
     color: #0B0F13;
-    font-size: 2em;
-    line-height: 1em;
+    font-size: 2rem;
+    line-height: 1rem;
 }
 
 .navtext .tel {
     color: #1074E0;
     font-weight: bold;
+    line-height: 1.5em;
 }
 
 a {
@@ -82,7 +83,8 @@ nav {
 
 .navbar .nav-home:hover,
 .nav-contact:hover,
-.nav-about:hover,.nav-signin:hover,.about-text a:hover {
+.nav-about:hover,.nav-signin:hover,.about-text a:hover,
+.tel-info-text a:hover {
     color: #9c0be0;
 }
 
@@ -130,7 +132,7 @@ nav {
 .schools-text{
     text-align: center;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2rem;
     /* background: linear-gradient(to right, #d4dfc3, #ae77f7); */
 }
 
@@ -159,7 +161,7 @@ nav {
 
 .about-text{
     width: 400px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -189,6 +191,99 @@ nav {
     height: 100%;
     object-position: center;
     object-fit: cover;
+}
+
+/* Reach Us */
+#tel-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tel-info-text {
+    width: 600px;
+    height: 400px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel-info-text a {
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 48px;
+}
+
+.tel-info-img {
+    width: 500px;
+    height: 400px;
+}
+
+.tel-info-img img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.tel-btns .tel-info-btn{
+    margin: 10px;
+}
+
+.tel-btns{
+    display: flex;
+}
+
+/* contact section */
+.contact{
+    display: flex;
+}
+
+.contact iframe{
+    /* width: 500px; */
+    width: calc(100vw/3);
+    height: 400px;
+}
+
+.contacts,.con{
+    /* width: 500px; */
+    width: calc(100vw/3);
+    height: 400px;
+    background-color: #f8f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-social-media{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-social-media i{
+    margin: 20px 40px;
+}
+
+.contact-social-media span{
+    display: inline-block;
+    margin-top: 10px;
 }
 
 /* footer section */
@@ -272,7 +367,7 @@ footer .footer-item .footer-logo {
 
 footer .footer-item .footer-logo i {
     font-size: 24px;
-    color: #fe4066;
+    color: #8c8889;
     font-weight: 600;
 }
 
@@ -310,7 +405,7 @@ footer .footer-item .footer-social-media a span {
 }
 
 footer .footer-item .footer-social-media a:hover .iconfont,
-footer .footer-item .footer-social-media a:hover span {
+footer .footer-item .footer-social-media a:hover span, .footer-logo a:hover i {
     color: #fe4066;
 }
 
@@ -338,6 +433,12 @@ footer .footer-foot .foot-last {
     float: right;
 }
 
-.footer-web {
-    display: block;
+/* media queries */
+@media(max-width:600px){
+    .navtext .title, .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
