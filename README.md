@@ -1,2 +1,2 @@
-# BlescoCMS
-Blescohouse Content Management System
+# BlescoSMS
+Blescohouse School Management System
