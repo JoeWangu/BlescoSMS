@@ -50,11 +50,6 @@
   mysqli_stmt_bind_param($stmt, "ii", $start_from, $records_per_page);
   mysqli_stmt_execute($stmt);
   $result = mysqli_stmt_get_result($stmt);
-
-  // Calculate the total number of pages
-  // $total_records = mysqli_num_rows($result);
-  // $total_records = mysqli_fetch_array($result)[0];
-  // $total_pages = ceil($total_records / $records_per_page);
   
   // Calculate the total number of pages
   $total_records = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM register"));
